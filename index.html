@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Rock Paper Scissors</h1>
+    </div>
+
+    <div class="content">
+      <div class="round-text">ROUND <span id="round-var">0</span></div>
+
+      <div class="game-area">
+        <div id="player" class="player-area">
+          <div class="star-box"></div>
+
+          <div class="player-box">
+            <div class="name">Player</div>
+            <div class="player-img-box">
+              <img src="./src/player.jpg" alt="Player" />
+            </div>
+          </div>
+        </div>
+
+        <div class="contest">
+          <div class="contest-photo">
+            <img src="" alt="" style="visibility: hidden" />
+          </div>
+
+          <div id="vs">V.S</div>
+          <div class="contest-photo">
+            <img src="" alt="" style="visibility: hidden" />
+          </div>
+        </div>
+
+        <div id="computer" class="player-area">
+          <div class="star-box"></div>
+          <div class="player-box">
+            <div class="name">Computer</div>
+            <div class="player-img-box">
+              <img src="./src/AI.jpg" alt="Player" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="interactive">
+      <div class="interactive-middle">
+        <div class="score-area">
+          <div class="score-player">0</div>
+          <div id="comma">&nbsp;:&nbsp;</div>
+          <div class="score-computer">0</div>
+        </div>
+        <div class="button">
+          <button class="inputname">Input name</button>
+          <button class="again">Try again</button>
+        </div>
+      </div>
+
+      <div class="selector">
+        <div class="selector-img">
+          <img id="rock" src="./src/rock.jpg" alt="rock" />
+        </div>
+        <div class="selector-img">
+          <img id="paper" src="./src/paper.jpg" alt="paper" />
+        </div>
+        <div class="selector-img">
+          <img id="scissors" src="./src/scissors.jpg" alt="scissors" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Copyright &copy; The Odin Project 2021</div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
