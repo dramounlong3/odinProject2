@@ -36,9 +36,9 @@ let handleInputName = document.querySelector(".inputname");
 handleInputName.addEventListener("click", async (e) => {
   //sweetalert2 => should include the script on index.html on head
   const { value: userName } = await Swal.fire({
-    title: "Enter your name",
+    title: "Welcome!",
     input: "text",
-    inputLabel: "Your IP address",
+    inputLabel: "Please input your name.",
     inputValue: "", //default input on the screen
     showCancelButton: true,
     inputValidator: (value) => {
